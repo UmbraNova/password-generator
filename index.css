@@ -72,9 +72,9 @@ h1 {
     background-color: rgb(190, 190, 190);
 }
 
-@media (hover: hover) {
+@media (max-width: 600px) {
     #generate-btn:hover, #change-btn:hover, #pass-one:hover, #pass-two:hover {
-        background-color: rgb(190, 190, 190);
+        background-color: var(--contrast-color);
     }
 }
 
