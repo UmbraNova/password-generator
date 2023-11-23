@@ -24,7 +24,7 @@ body {
     display: flex;
     height: 70vh;
     max-width: 480px;
-    min-width: 360px;
+    min-width: 300px;
     max-height: 500px;
     margin: auto;
     margin-top: 20px;
