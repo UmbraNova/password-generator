@@ -1,0 +1,116 @@
+:root {
+    --contrast-color: #0FB980;
+    /* --contrast-color: rgb(50, 210, 140); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* letter-spacing: 1px; */
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body {
+    background: linear-gradient(45deg, green, aqua);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    /* background-color: rgb(15, 75, 100); */
+    background-color: #1E2A37;
+    display: flex;
+    height: 70vh;
+    max-width: 480px;
+    min-width: 360px;
+    max-height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 50px 20px;
+    flex-direction: column;
+    box-shadow: black 0px 2px 7px 2px;
+    color: white;
+}
+
+.tip-el {
+    margin-top: 20px;
+    color: rgb(190, 190, 190);
+    font-family:monospace;
+    text-align: center;
+}
+
+p:last-of-type {
+    margin: 30px auto;
+    text-align: center;    
+}
+
+.color-el {
+    color: var(--contrast-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+#generate-btn {
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 7px;
+    background-color: var(--contrast-color);
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    user-select: none;
+    min-height: 45px;
+}
+
+#generate-btn:hover {
+    background-color: grey;
+}
+
+#results {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+#results > button {
+    height: 40px;
+    width: 45%;
+    background-color: rgb(12, 60, 80);
+    border-radius: 7px;
+    font-family:monospace;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--contrast-color);
+    border: none;
+}
+
+hr {
+    border: 1px solid rgba(190, 190, 190, 0.5);
+    width: 92.5%;
+    margin: 10px auto;
+}
+
+form {
+    margin: auto;
+    user-select: none;
+}
+
+label {
+    display: block;
+    margin-top: 16px;    
+}
+
+input {
+    margin-right: 7px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
