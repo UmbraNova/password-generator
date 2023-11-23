@@ -9,6 +9,8 @@ let checkNumbers = document.getElementById("numbers-el")
 let checkLetters = document.getElementById("letters-el")
 
 let inputArray = []
+let passwordLength = 15
+
 
 function copyPassword(choice) {
     let paragraphText = document.getElementById(choice).innerText;
@@ -22,6 +24,7 @@ function copyPassword(choice) {
     document.execCommand("copy");
     document.body.removeChild(textarea);
 }
+
 
 function initPasswords() {
     if (checkNumbers.checked && checkLetters.checked) {
@@ -38,12 +41,21 @@ function initPasswords() {
     passTwo.textContent = generatePassword()
 }
 
+
 function generatePassword() {
     let rndPassword = ""
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < passwordLength; i++) {
         rndPassword += inputArray[Math.floor(Math.random()*(inputArray.length-1))]
     }
     return rndPassword
 }
 
+
+function changeLength() {
+    passwordLength = prompt("Enter the length of the password (max 16): ")
+    if (passwordLength > 16) {
+        passwordLength = 15
+        alert("Maximum length is 16 characters")
+    }
+}
 

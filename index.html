@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Password generator</title>
     </head>
-    
+
     <body>
         <main>
             <div class="container">
                 <h1>Generate a <br><span class="color-el">random password</span></h1>
                 <p class="tip-el">Never use an insecure paswword</p>
                 <button id="generate-btn" onclick="initPasswords()">Generate passwords</button>
+                <button id="change-btn" onclick="changeLength()">Change length</button>
                 <hr>
                 <div id="results">
                     <button id="pass-one" onclick="copyPassword('pass-one')"></button>
