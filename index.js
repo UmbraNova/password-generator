@@ -21,7 +21,7 @@ function copyPassword(choice) {
     textarea.style.left = "0";
     document.body.appendChild(textarea);
     textarea.select();
-    document.execCommand("copy");
+    // document.execCommand("copy");
     document.body.removeChild(textarea);
 }
 
