@@ -68,8 +68,12 @@ h1 {
     min-height: 45px;
 }
 
+#button:hover {
+    background-color: rgb(190, 190, 190);
+}
+
 @media (hover: hover) {
-    #generate-btn:hover, #change-btn:hover {
+    #button:hover {
         background-color: rgb(190, 190, 190);
     }
 }
