@@ -71,16 +71,14 @@ h1 {
 #generate-btn:hover, #change-btn:hover, #pass-one:hover, #pass-two:hover {
     background-color: rgb(190, 190, 190);
 }
-/* 
-@media (max-width: 600px) {
-    #generate-btn:hover, #change-btn:hover, #pass-one:hover, #pass-two:hover {
-        pointer-events: none;
-    }
-} */
 
-@media (hover: none) {
-    button:hover {
-        background-color: inherit;
+@media (max-width: 600px) {
+    #generate-btn:hover, #change-btn:hover {
+        background-color: var(--contrast-color);
+    }
+
+    #pass-one:hover, #pass-two:hover {
+        background-color:rgb(12, 60, 80);
     }
 }
 

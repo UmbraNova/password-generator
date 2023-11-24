@@ -55,7 +55,7 @@ function changeLength() {
     passwordLength = prompt("Enter the length of the password (max 16): ")
     if (passwordLength > 16 || passwordLength < 6) {
         passwordLength = 15
-        alert("Password range is 6-16 characters")
+        alert("Allowed password length 6-16 characters")
     }
 }
 
