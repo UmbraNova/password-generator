@@ -52,9 +52,9 @@ function generatePassword() {
 
 
 function changeLength() {
-    passwordLength = prompt("Enter the length of the password (max 16): ")
-    if (passwordLength > 16 || passwordLength < 6) {
-        passwordLength = 15
+    let newPassLength = prompt("Enter the length of the password (max 16): ")
+    if (newPassLength > 16 || newPassLength < 6) {
+        passwordLength = newPassLength
         alert("Allowed password length 6-16 characters")
     }
 }
