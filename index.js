@@ -21,7 +21,7 @@ function copyPassword(choice) {
     textarea.style.left = "0";
     document.body.appendChild(textarea);
     textarea.select();
-    // document.execCommand("copy");
+    document.execCommand("copy");   
     document.body.removeChild(textarea);
 }
 
@@ -53,9 +53,9 @@ function generatePassword() {
 
 function changeLength() {
     passwordLength = prompt("Enter the length of the password (max 16): ")
-    if (passwordLength > 16) {
+    if (passwordLength > 16 || passwordLength < 6) {
         passwordLength = 15
-        alert("Maximum length is 16 characters")
+        alert("Password range is 6-16 characters")
     }
 }
 
