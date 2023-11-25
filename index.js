@@ -47,13 +47,14 @@ function generatePassword() {
     for (let i = 0; i < passwordLength; i++) {
         rndPassword += inputArray[Math.floor(Math.random()*(inputArray.length-1))]
     }
+    
     return rndPassword
 }
 
 
 function changeLength() {
-    let newPassLength = prompt("Enter the length of the password (max 16): ")
-    if (newPassLength > 16 || newPassLength < 6) {
+    let newPassLength = prompt("Enter the password length (min6-max16): ")
+    if (newPassLength > 16 && newPassLength < 6) {
         passwordLength = newPassLength
         alert("Allowed password length 6-16 characters")
     }
